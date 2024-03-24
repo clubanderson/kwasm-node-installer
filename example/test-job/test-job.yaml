@@ -9,7 +9,6 @@ kind: Job
 metadata:
   creationTimestamp: null
   name: wasm-test
-  namespace: kwasm
 spec:
   template:
     metadata:
