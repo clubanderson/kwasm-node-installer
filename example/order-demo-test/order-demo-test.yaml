@@ -19,6 +19,9 @@ spec:
       containers:
       - image: quay.io/clubanderson/order-demo-wasi:latest
         name: order-demo-wasi
+        env:
+        - name: DATABASE_URL
+          value: "mysql://user:passwd@127.0.0.1:3306/mysql"
         resources: {}
       restartPolicy: Never
       runtimeClassName: wasmedge
